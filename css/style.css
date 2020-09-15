@@ -428,7 +428,7 @@ template {
      object-fit: cover;
 }
 
-.user__avatar__name {
+.user__name {
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
