@@ -9,6 +9,7 @@
   "explorer.confirmDelete": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.parameterHints.enabled": false,
+  "editor.hover.enabled": false,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
   "liveSassCompile.settings.formats": [
