@@ -224,7 +224,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map"></div>
+            <!-- <div id="map" class="map"></div> -->
             <!-- /.map -->
           </div>
           <!-- /.hotel-extra -->
@@ -233,24 +233,30 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="newsletter">
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
-          subscribe to our
-          <span class="newsletter-subtitle">Newsletter</span>
-        </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email address"
-          />
-          <button class="subscribe__button">Send</button>
-        </form>
-      </div>
-      <!-- /.newsletter-wrapper -->
-    </section>
-    <!-- /.newsletter -->
+    <div
+      class="parallax-window"
+      data-parallax="scroll"
+      data-image-src="img/newsletter-bg.jpg"
+    >
+      <section class="newsletter">
+        <div class="newsletter-wrapper">
+          <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-subtitle">Newsletter</span>
+          </h2>
+          <form action="#" class="subscribe newsletter__subscribe">
+            <input
+              type="text"
+              class="subscribe__input"
+              placeholder="Your email address"
+            />
+            <button class="subscribe__button">Send</button>
+          </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
+      </section>
+      <!-- /.newsletter -->
+    </div>
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people thinks about us</h2>
@@ -388,5 +394,7 @@
       type="text/javascript"
     ></script>
     <script src="js/yandex_maps.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
   </body>
 </html>
