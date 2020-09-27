@@ -812,6 +812,11 @@ template {
   overflow: hidden;
 }
 
+.package {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
 .newsletter {
   background-image: url(../img/newsletter-bg.jpg);
   background: transparent;
