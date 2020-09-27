@@ -817,6 +817,18 @@ template {
   padding-bottom: 70px;
 }
 
+.package__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.package-wrapper {
+  margin-top: 65px;
+}
+
 .newsletter {
   background-image: url(../img/newsletter-bg.jpg);
   background: transparent;
