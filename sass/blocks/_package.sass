@@ -8,5 +8,39 @@
     text-align: center
     text-transform: uppercase
   &-wrapper
-    margin-top: 65px
+    display: grid
+    grid-template-columns: 730px 350px
+    gap: 30px
+  &-info 
+    padding: 46px 21px 30px 43px 
+  &-main
+    display: flex
+    align-items: flex-start
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    &__text
+      display: inline-block
+      margin-top: 27px
+      font-size: 14px
+      line-height: 160.6%
+      margin-bottom: 34px
+  &__name
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0
+  &-options
+    display: flex
+    align-items: flex-start
+    justify-content: space-evenly
+    max-width: 203px
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 11px
+.main-card
+  width: 366px
+  height: 500px
+  border-top-left-radius: 8px
+  border-bottom-left-radius: 8px
 

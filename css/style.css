@@ -826,7 +826,65 @@ template {
 }
 
 .package-wrapper {
-  margin-top: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 730px 350px;
+      grid-template-columns: 730px 350px;
+  gap: 30px;
+}
+
+.package-info {
+  padding: 46px 21px 30px 43px;
+}
+
+.package-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #0A223D;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.package-main__text {
+  display: inline-block;
+  margin-top: 27px;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 34px;
+}
+
+.package__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0;
+}
+
+.package-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 203px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.main-card {
+  width: 366px;
+  height: 500px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .newsletter {
