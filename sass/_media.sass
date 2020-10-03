@@ -219,8 +219,13 @@
     width: 49%
     height: 255px
   .footer
+    &-wrapper
+      padding-bottom: 56px
     &__input
       flex-basis: 100%
+    &-legal
+      margin-left: 0
+      max-width: 486px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -246,13 +251,18 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
+      padding-bottom: 30px
     &__logo
       grid-row: 1
       grid-column: 1
     &__social
       &-network
+        align-items: flex-start
+        flex-direction: column
         grid-row: 2
         grid-column: 1
+      &__links
+        margin-top: 22px
     &__additional
       grid-row: 3
       grid-column: 1
@@ -277,3 +287,34 @@
       flex-direction: column-reverse
       &__field
         margin-bottom: 15px
+    &-legal
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      max-width: 696px
+      &__image
+        margin-top: 10px
+        
+@media (max-width: 320px)
+  .container
+    max-width: 281px
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &__input
+      max-width: 281px
+    &__message
+      max-width: 281px
+    &__contact
+      &-details
+        width: 281px
+    &-legal
+      &__ul
+        max-width: 281px
+      &__link
+        margin-left: 6px
+        &--ml-0
+          margin-left: 0
+    
+

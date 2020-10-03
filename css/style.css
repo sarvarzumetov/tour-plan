@@ -1722,9 +1722,16 @@ template {
     width: 49%;
     height: 255px;
   }
+  .footer-wrapper {
+    padding-bottom: 56px;
+  }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer-legal {
+    margin-left: 0;
+    max-width: 486px;
   }
 }
 
@@ -1760,6 +1767,7 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    padding-bottom: 30px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1768,10 +1776,20 @@ template {
     grid-column: 1;
   }
   .footer__social-network {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__social__links {
+    margin-top: 22px;
   }
   .footer__additional {
     -ms-grid-row: 3;
@@ -1820,6 +1838,53 @@ template {
   }
   .footer-reverse__field {
     margin-bottom: 15px;
+  }
+  .footer-legal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 696px;
+  }
+  .footer-legal__image {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 281px;
+  }
+  .footer {
+    padding-top: 69px;
+    padding-bottom: 21px;
+  }
+  .footer__input {
+    max-width: 281px;
+  }
+  .footer__message {
+    max-width: 281px;
+  }
+  .footer__contact-details {
+    width: 281px;
+  }
+  .footer-legal__ul {
+    max-width: 281px;
+  }
+  .footer-legal__link {
+    margin-left: 6px;
+  }
+  .footer-legal__link--ml-0 {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
