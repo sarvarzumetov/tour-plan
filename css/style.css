@@ -1362,9 +1362,6 @@ template {
           align-items: center;
   max-width: 696px;
   margin-left: auto;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
 }
 
 .footer-legal__ul {
@@ -1538,7 +1535,8 @@ template {
     grid-row: 4;
   }
   .footer-legal {
-    max-width: 700px;
+    margin-left: 0;
+    max-width: 585px;
   }
   .footer-legal__link--ml-0 {
     margin-left: 0;
@@ -1588,6 +1586,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow-y: scroll;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1885,6 +1884,9 @@ template {
   }
   .footer-legal__link--ml-0 {
     margin-left: 0;
+  }
+  .search__input {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

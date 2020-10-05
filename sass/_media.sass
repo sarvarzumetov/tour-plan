@@ -92,7 +92,8 @@
         grid-column: span 5
         grid-row: 4
     &-legal
-      max-width: 700px
+      margin-left: 0
+      max-width: 585px
       &__link
         &--ml-0
           margin-left: 0
@@ -129,6 +130,7 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow-y: scroll
     &-menu
       flex-direction: column
       &__item
@@ -316,5 +318,7 @@
         margin-left: 6px
         &--ml-0
           margin-left: 0
-    
+  .search
+    &__input
+      width: 250px      
 
