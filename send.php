@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 
 // Формирование самого письма
@@ -16,6 +17,7 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
+<b>Почта:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -25,7 +27,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -44,7 +46,7 @@ try {
     $mail->Subject = $title;
     $mail->Body = $body;    
 
-// Проверяем отравленность сообщения
+// Проверяем отправленность сообщения
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
 
@@ -54,4 +56,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: ty.html');
