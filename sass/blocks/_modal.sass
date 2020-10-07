@@ -1,0 +1,116 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    padding: 33px 88px
+    background-color: $dark
+    transform: translate(-50%, -50%)
+    color: $light
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    margin: 0
+    margin-bottom: 15px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    color: $light
+    text-transform: uppercase
+    text-align: center
+    &--inline
+      margin: 0
+      margin-right: 43px
+    &--details
+      margin-bottom: 25px
+      width: 180px
+    &--form
+      margin-bottom: 15px
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__input
+    background-color: #fff
+    padding: 0 23px 0 23px
+    height: 50px
+    border-radius: 4px
+    border: none
+    margin-bottom: 15px
+    flex-basis: 100%
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    outline: none
+    &::placeholder
+      color: $ftc
+      font-size: 12px
+  &__message
+    flex-basis: 100%
+    padding: 18px 23px
+    border: none
+    border-radius: 4px
+    background-color: #fff
+    margin-bottom: 15px
+    height: 123px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    outline: none
+    resize: none
+    &::placeholder
+      color: $ftc
+      ont-weight: bold
+      font-size: 12px
+  &__button
+    background-color: $primary
+    color: $light
+    outline: none
+    border: none
+    border-radius: 4px
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    cursor: pointer
+    outline: none
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0

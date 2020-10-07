@@ -253,7 +253,14 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button
+                id="modal_id"
+                data-toggle="modal"
+                data-keyboard="true"
+                class="button booking__button"
+              >
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -656,6 +663,46 @@ quest"
         </nav>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--form">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            class="modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
