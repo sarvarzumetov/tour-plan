@@ -60,4 +60,24 @@ $(document).ready(function () {
       $(".modal").hide();
     }
   });
+
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Your name should contain more 2 symbols",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Please specify phone number",
+        },
+      },
+    });
+  });
 });
