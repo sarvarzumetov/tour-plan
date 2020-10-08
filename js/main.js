@@ -81,4 +81,17 @@ $(document).ready(function () {
     });
   });
   AOS.init();
+
+  $(".map").click(function () {
+    var map = $(this).attr("data-map");
+    var map_width = $(window).width();
+    var map_height = $(this).attr("data-map-height");
+    $(this).css("height", map_height);
+    if (map_width > 640) {
+      map_width = 640;
+    }
+    $(this).html(
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3193.1211127681413!2d174.76497850883564!3d-36.83957536888461!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc797af5c706f9874!2sHilton%20Auckland!5e0!3m2!1sru!2sus!4v1602174410480!5m2!1sru!2sus" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>'
+    );
+  });
 });
