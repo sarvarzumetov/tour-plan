@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -20,12 +21,16 @@
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
+              data-aos="fade-down"
+              data-aos-delay="100"
             />
           </a>
 
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-down"
+            data-aos-delay="300"
           >
             <input
               type="text"
@@ -37,7 +42,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-down"
+            data-aos-delay="500"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -303,7 +313,9 @@
     </div>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people thinks about us</h2>
+        <h2 class="reviews__title" data-aos="fade-down" data-aos-delay="100">
+          What people thinks about us
+        </h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -313,10 +325,27 @@
                     src="img/reviews-avatar-1.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
+                    data-aos="fade-down"
+                    data-aos-delay="300"
                   />
-                  <h3 class="reviews-slider__username">Megan Fox</h3>
-                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                  <div class="reviews-slider__rating">
+                  <h3
+                    class="reviews-slider__username"
+                    data-aos="fade-down"
+                    data-aos-delay="500"
+                  >
+                    Megan Fox
+                  </h3>
+                  <span
+                    class="reviews-slider__date"
+                    data-aos="fade-down"
+                    data-aos-delay="700"
+                    >Stayed 18 Nov, 2019</span
+                  >
+                  <div
+                    class="reviews-slider__rating"
+                    data-aos="fade-down"
+                    data-aos-delay="800"
+                  >
                     <img src="img/star.svg" alt="star" />
                     <img src="img/star.svg" alt="star" />
                     <img src="img/star.svg" alt="star" />
@@ -326,7 +355,11 @@
                   <!-- /.reviews-slider__rating -->
                 </div>
                 <!-- /.reviews-slider__profile -->
-                <p class="reviews-slider__text">
+                <p
+                  class="reviews-slider__text"
+                  data-aos="fade-down"
+                  data-aos-delay="900"
+                >
                   It was very nice hotel with cleanliness. Staff behavior was
                   good and polite. They welcome us very well. Issue was only
                   that Lift was not in working and we were allotted to 3rd floor
@@ -433,9 +466,15 @@
     <!-- /.reviews -->
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2 class="activities__title" data-aos="fade-down" data-aos-delay="300">
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img
               src="img/activity-image-1.jpg"
               alt="The curious corner 
@@ -446,7 +485,11 @@ of chamarel"
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <img
               src="img/activity-image-2.jpg"
               alt="Gymkhana club golf
@@ -457,7 +500,11 @@ course"
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             <img
               src="img/activity-image-3.jpg"
               alt="Tamarind falls hiking
@@ -468,7 +515,11 @@ trip - full day"
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-delay="800"
+          >
             <img
               src="img/activity-image-4.jpg"
               alt="The blue marine discovery
@@ -488,7 +539,12 @@ quest"
     <footer class="footer">
       <div class="container">
         <div class="footer-grid">
-          <a href="#" class="footer__logo">
+          <a
+            href="#"
+            class="footer__logo"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
             <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
           </a>
           <div class="footer__list footer__categories">
@@ -718,6 +774,7 @@ quest"
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
