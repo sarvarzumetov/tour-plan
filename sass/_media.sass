@@ -129,6 +129,23 @@
   .modal
     &__dialog
       padding: 33px 60px
+  label.invalid
+    &__modal
+      &#name-error
+        top: 71px
+        left: 61px
+      &#phone-error
+        top: 135px
+        left: 61px
+      &#email-error
+        top: 199px
+        left: 61px
+  label.invalid
+    &#name-error
+      left: 0
+    &#phone-error
+      top: 50px
+      left: 0
 @media (max-width: 768px)
   body
     padding-top: 78px
@@ -346,7 +363,23 @@
     &__info
       flex-basis: 100%
       text-align: center
-
+  label.invalid
+    &__modal
+      &#name-error
+        top: 63px
+        left: 52px
+      &#phone-error
+        top: 127px
+        left: 52px
+      &#email-error
+        top: 191px
+        left: 52px
+  label.invalid
+    &#name-error
+      top: 50px
+    &#phone-error
+      top: 50px
+      left: 0
 @media (max-width: 576px)
   .navbar
     &-top
@@ -439,6 +472,22 @@
     &__message
       font-size: 10px
       line-height: 15px
+  label.invalid
+    &__modal
+      &#name-error
+        top: 58px
+        left: 40px
+      &#phone-error
+        top: 122px
+        left: 40px
+      &#email-error
+        top: 186px
+        left: 40px
+  label.invalid
+    &#name-error
+      top: 50px
+    &#phone-error
+      top: 50px
 @media (max-width: 470px)
   .footer
     &__navigation

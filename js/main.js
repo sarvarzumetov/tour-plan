@@ -44,6 +44,7 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    $("body").addClass("stop")
   }
 
   function closeModal(event) {
@@ -52,14 +53,25 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    $("body").removeClass("stop")
   }
-
-  $(document).keyup(function (e) {
+  
+  $(document).on("keydown", function(event) {
+        if (event.keyCode == 27) {
+            let modalOverlay = $(".modal__overlay");
+            let modalDialog = $(".modal__dialog");
+            modalOverlay.removeClass("modal__overlay--visible");
+            modalDialog.removeClass("modal__dialog--visible");
+            $("body").removeClass("stop")
+        }
+    });
+  
+  /* $(document).keyup(function (e) {
     if (e.keyCode == 27) {
       //hides all modal boxes when escape key pressed
       $(".modal").hide();
     }
-  });
+  }); */
 
   // Обработка форм
   $(".form").each(function () {
@@ -80,6 +92,45 @@ $(document).ready(function () {
       },
     });
   });
+
+  // Валидация NEWSLETTER
+
+  $(".subscribe").validate({
+        errorClass: "invalid__subscribe",
+        rules: {
+            email: {
+                required: true,
+            },
+        },
+        messages: {
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com",
+            },
+        },
+    });
+
+    // Валидация MODAL
+
+    $(".modal__form").validate({
+        errorClass: "invalid__modal",
+        messages: {
+            name: {
+                required: "Please specify your name",
+                minlength: "At least 2 characters",
+            },
+            email: {
+                required: "We need your email address",
+                email: "name@domain.com",
+            },
+            phone: {
+                required: "We need your phone number",
+                minlength: "8-999-999-99-99",
+            },
+        },
+    });
+  
+  // Инициализация AOS
   AOS.init();
 
   $(".map").click(function () {
