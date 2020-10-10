@@ -1729,7 +1729,7 @@ template {
     padding-top: 31px;
   }
   .navbar-menu__item {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
   .navbar-menu__item:nth-child(1), .navbar-menu__item:nth-child(2) {
     margin-bottom: 0;
