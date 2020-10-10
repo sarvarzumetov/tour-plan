@@ -970,7 +970,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 37%;
+  top: 47%;
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
@@ -999,7 +999,7 @@ template {
   flex-direction: column;
   align-items: center;
   margin-top: -45px;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .reviews-slider__avatar {
@@ -1016,7 +1016,7 @@ template {
   line-height: 15px;
   color: #EC1F46;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .reviews-slider__date {
@@ -1548,20 +1548,20 @@ template {
     max-width: 700px;
   }
   .reviews {
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 60px;
   }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
     margin-top: 40px;
-    margin-bottom: 49px;
+    margin-bottom: 43px;
   }
   .reviews-slider__item {
     max-width: 579px;
   }
   .reviews-slider__button {
-    top: 44%;
+    top: 51%;
   }
   .reviews-slider__button--prev {
     left: 0;
@@ -1691,6 +1691,34 @@ template {
   label.invalid#phone-error {
     top: 50px;
     left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__text {
+    line-height: 160%;
+  }
+  .reviews-slider__item {
+    max-width: 579px;
+  }
+  .reviews-slider__button {
+    top: 50%;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
 }
 
@@ -2214,7 +2242,7 @@ template {
     font-size: 18px;
   }
   .reviews-slider__button {
-    top: 7%;
+    top: 9%;
   }
   .reviews-slider__button--prev {
     left: 32px;
@@ -2230,10 +2258,15 @@ template {
 @media (max-width: 320px) {
   .reviews-slider__text {
     line-height: 160%;
+    word-spacing: 0.1px;
   }
   .reviews__title {
-    margin-top: 45px;
+    margin-top: 40px;
+    line-height: 25px;
     max-width: 261px;
+  }
+  .reviews__username {
+    margin-bottom: 10px;
   }
   .newsletter {
     padding: 68px 0 83px 0;
