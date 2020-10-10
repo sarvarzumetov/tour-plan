@@ -82,11 +82,11 @@ a:hover {
   color: #EC1F46;
 }
 
-button {
+.but {
   transition: all 500ms ease;
 }
 
-button:hover {
+.but:hover {
   background: #ab004a;
   color: #ffffff;
   box-shadow: inset 0 0 0 3px #ea3a5b;
@@ -1016,7 +1016,7 @@ template {
   line-height: 15px;
   color: #EC1F46;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .reviews-slider__date {
@@ -2228,8 +2228,21 @@ template {
 }
 
 @media (max-width: 320px) {
+  .reviews-slider__text {
+    line-height: 160%;
+  }
+  .reviews__title {
+    margin-top: 45px;
+    max-width: 261px;
+  }
   .newsletter {
     padding: 68px 0 83px 0;
+  }
+  .footer__input {
+    max-width: 100%;
+  }
+  .footer__message {
+    max-width: 100%;
   }
 }
 
