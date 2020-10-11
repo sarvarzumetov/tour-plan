@@ -2228,13 +2228,6 @@ template {
   .container {
     max-width: 280px;
   }
-  .newsletter-wrapper {
-    max-width: 281px;
-  }
-  .newsletter-subtitle {
-    font-size: 30px;
-    line-height: 38px;
-  }
   .reviews__title {
     max-width: 273px;
     line-height: 170%;
@@ -2261,7 +2254,8 @@ template {
     word-spacing: 0.1px;
   }
   .reviews__title {
-    margin-top: 40px;
+    margin-top: 46px;
+    margin-bottom: 44px;
     line-height: 25px;
     max-width: 261px;
   }
@@ -2269,13 +2263,55 @@ template {
     margin-bottom: 10px;
   }
   .newsletter {
-    padding: 68px 0 83px 0;
+    padding-top: 68px;
+    padding-bottom: 83px;
+  }
+  .newsletter-wrapper {
+    max-width: 281px;
+  }
+  .newsletter-subtitle {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 6px;
+  }
+  .newsletter-title {
+    margin-top: 11px;
+  }
+  .footer__title--form {
+    margin-top: 5px;
   }
   .footer__input {
     max-width: 100%;
   }
   .footer__message {
     max-width: 100%;
+  }
+  .footer__navigation--ul {
+    width: 275px;
+  }
+  .footer__icon--map {
+    margin-left: -1px;
+    margin-top: 3px;
+  }
+  .footer__icon--phone {
+    margin-left: -4px;
+    margin-top: 7px;
+  }
+  .footer__icon--mail {
+    margin-left: -3px;
+    margin-top: 10px;
+  }
+  .footer__contact--first {
+    margin-left: 4px;
+    margin-top: -2px;
+  }
+  .footer__contact--second {
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+  .footer__contact--third {
+    margin-left: -12px;
+    margin-top: 4px;
   }
 }
 
