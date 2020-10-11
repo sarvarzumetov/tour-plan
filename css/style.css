@@ -2249,6 +2249,9 @@ template {
 }
 
 @media (max-width: 320px) {
+  .hotel {
+    padding-bottom: 43px;
+  }
   .reviews-slider__text {
     line-height: 160%;
     word-spacing: 0.1px;
@@ -2263,8 +2266,8 @@ template {
     margin-bottom: 10px;
   }
   .newsletter {
-    padding-top: 68px;
-    padding-bottom: 83px;
+    padding-top: 64px;
+    padding-bottom: 82px;
   }
   .newsletter-wrapper {
     max-width: 281px;
