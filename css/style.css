@@ -1692,6 +1692,23 @@ template {
     top: 50px;
     left: 0;
   }
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  .but {
+    transition: all 0s ease 0s;
+  }
+  .but:hover {
+    background: #EC1F46;
+    color: #ffffff;
+    box-shadow: none;
+  }
+  .flink:hover {
+    text-decoration: none;
+    background: #EC1F46;
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 768px) {

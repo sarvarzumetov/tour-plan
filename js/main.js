@@ -88,6 +88,7 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
+          minlength: "+7 (999) 999 99 99",
           required: "Please specify phone number",
         },
       },
@@ -131,6 +132,10 @@ $(document).ready(function () {
         },
     });
   
+  $(document).ready(function() {
+        $(".phone").mask("+0-(000)-000-00-00")
+    });
+
   // Инициализация AOS
   AOS.init();
 
